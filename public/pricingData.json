@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "title": "Basic Plan",
+    "price": 19.99,
+    "billingCycle": "per month",
+    "description": "Perfect for beginners who want essential gym access.",
+    "features": [
+      "Access to gym floor & equipment",
+      "Locker room access",
+      "1 free fitness consultation",
+      "Open gym (non-peak hours)",
+      "Basic cardio machines"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Standard Plan",
+    "popular": true,
+    "price": 39.99,
+    "billingCycle": "per month",
+    "description": "Ideal for regular gym-goers looking for flexibility and extra perks.",
+    "features": [
+      "Unlimited access to gym floor",
+      "Access during all hours",
+      "2 personal training sessions/month",
+      "Group fitness classes",
+      "Free locker usage"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Premium Plan",
+    "popular": true,
+    "price": 59.99,
+    "billingCycle": "per month",
+    "description": "Perfect for advanced trainees who want premium benefits.",
+    "features": [
+      "24/7 access to all facilities",
+      "Unlimited group classes",
+      "5 personal training sessions/month",
+      "Steam & sauna access",
+      "Priority booking for trainers"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Couple Plan",
+    "popular": true,
+    "price": 89.99,
+    "billingCycle": "per month",
+    "description": "Discounted plan for two people training together.",
+    "features": [
+      "Gym access for 2 people",
+      "Access during all hours",
+      "2 group class passes each",
+      "Discounted personal training sessions",
+      "Couple progress tracking report"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Annual Membership",
+    "price": 399.99,
+    "billingCycle": "per year",
+    "description": "Best value plan for long-term fitness enthusiasts.",
+    "features": [
+      "Unlimited gym access",
+      "Unlimited group classes",
+      "12 personal training sessions/year",
+      "Free T-shirt & welcome kit",
+      "Special event invitations"
+    ]
+  }
+]
