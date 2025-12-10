@@ -75,7 +75,6 @@ const resultData = [
 ];
 
 const TriangleBar = (props) => {
-  console.log(props);
   const { fill, x, y, width, height } = props;
 
   const getPath = (x, y, width, height) => {

@@ -5,8 +5,11 @@ import NavBar from "./components/NavBar/NavBar";
 import PricingOptions from "./components/PricingOptions/PricingOptions";
 import { ToastContainer } from "react-toastify";
 import ResultsChart from "./components/ResultsChart/ResultsChart";
+import axios from "axios";
+import MarksChart from "./components/MarksChart/MarksChart";
 
-const pricingPromise = fetch('pricingData.json').then(res => res.json());
+const pricingPromise = fetch("pricingData.json").then((res) => res.json());
+const marksPromise = axios.get("marksData.json");
 
 function App() {
   return (
@@ -16,13 +19,20 @@ function App() {
         {/* <DaisyNav></DaisyNav> */}
       </header>
       <main>
-        <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
+        <Suspense
+          fallback={
+            <span className="loading loading-spinner loading-lg"></span>
+          }
+        >
           <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
         </Suspense>
-        <ToastContainer/>
-
+        <ToastContainer />
 
         <ResultsChart></ResultsChart>
+
+        <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
+          <MarksChart marksPromise={marksPromise}></MarksChart>
+        </Suspense>
       </main>
     </>
   );
